@@ -924,7 +924,7 @@ const SM = (function () {
 			
 			this.player.name_low = playerName.toLowerCase();
 			
-			if (this.DBObj[`player_${this.player.name_low }`] in this.DBObj) {
+			if (!(this.DBObj[`player_${this.player.name_low }`] in this.DBObj)) {
 							
 				this.player.name = playerName;			
 				this.player.pass = playerPassword;
