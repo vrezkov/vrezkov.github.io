@@ -898,7 +898,7 @@ const SM = (function () {
 						
 			if (this.DBObj[`player_${this.player.name_low}`]
 				&& playerName === this.DBObj[`player_${this.player.name_low}`].pName
-				&& this.player.pass === this.DBObj[`player_${this.player.name_low}`].pPassword) {
+				&& playerPassword === this.DBObj[`player_${this.player.name_low}`].pPassword) {
 				
 				this.player.loggedIn = true;
 				this.view.renderPlayerName(this.DBObj[`player_${this.player.name_low}`].pName);
